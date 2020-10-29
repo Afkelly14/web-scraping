@@ -12,6 +12,6 @@ params = {"q": search}
 r = requests.get("https://www.bing.com/search", params=params)
 
 ##transform the requests response into beautiful soup to be readable
-soup = BeautifulSoup(r.text)
+soup = BeautifulSoup(r.text, "html.parser")
 print(soup.prettify())
 

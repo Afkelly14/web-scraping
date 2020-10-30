@@ -24,4 +24,8 @@ for item in links:
     if item_text and item_href:
         print(item_text)
         print(item_href)
+        print("Summary:", item.find("a").parent.parent.find)
+
+        children = item.find("h2")
+        print("Child:",children.next_sibling)
 
